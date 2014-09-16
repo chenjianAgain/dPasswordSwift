@@ -16,7 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        // Override point for customization after application launch
+        
         return true
     }
 
@@ -54,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     lazy var managedObjectModel: NSManagedObjectModel = {
         // The managed object model for the application. This property is not optional. It is a fatal error for the application not to be able to find and load its model.
-        let modelURL = NSBundle.mainBundle().URLForResource("dPasswordSwift", withExtension: "momd")!
+        let modelURL = NSBundle.mainBundle().URLForResource("dPasswords", withExtension: "momd")!
         return NSManagedObjectModel(contentsOfURL: modelURL)
     }()
 
