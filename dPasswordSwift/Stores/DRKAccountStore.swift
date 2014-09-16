@@ -60,6 +60,15 @@ class DRKAccountStore {
     }
     
     func addAccountWithAccountName(accountName: NSString, username: NSString, encryptedPassword: NSData) {
+        
+        var account = NSEntityDescription.insertNewObjectForEntityForName("DRKAccount", inManagedObjectContext: self.managedObjectContext!) as DRKAccount
+        account.accountId = NSUUID.UUID().UUIDString
+        account.accountName = accountName
+        account.username = username
+        account.encryptedPassword = encryptedPassword
+        account.dateCreated = NSDate()
+        self.managedObjectContext!.insertObject(account)
+        self.accounts?.insertObject(account, atIndex: 0)
         self.save()
     }
     
@@ -69,26 +78,6 @@ class DRKAccountStore {
         self.save()
     }
 
-//    
-//    - (void)addAccountWithAccountName:(NSString *)accountName username:(NSString *)username encryptedPassword:(NSData *)encryptedPassword
-//    {
-//    DRKAccount *account = [NSEntityDescription insertNewObjectForEntityForName:@"DRKAccount"
-//    inManagedObjectContext:self.managedObjectContext];
-//    account.accountId = [[NSUUID UUID] UUIDString];
-//    account.accountName = accountName;
-//    account.username = username;
-//    account.encryptedPassword = encryptedPassword;
-//    account.dateCreated = [NSDate date];
-//    
-//    [self.managedObjectContext insertObject:account];
-//    
-//    [self.accounts insertObject:account atIndex:0];
-//    
-//    [self save];
-//    }
-
-    
-    
     /// Decrypt Password
     
     func decryptPassword(encryptedPassword: NSData, withKey key: NSString) -> NSString {

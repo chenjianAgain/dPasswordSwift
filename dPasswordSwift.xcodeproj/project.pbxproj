@@ -17,8 +17,8 @@
 		18BF843219C7E42C00933690 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BF842D19C7E42C00933690 /* NSString+MD5.m */; };
 		18BF843419C7E44C00933690 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BF843319C7E44C00933690 /* LaunchScreen.xib */; };
 		18BF843619C7E56700933690 /* DRKAccountStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF843519C7E56700933690 /* DRKAccountStore.swift */; };
-		18D0016B19C806C800A85316 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0016A19C806C800A85316 /* ViewController.swift */; };
-		18D0016E19C806D600A85316 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D0016D19C806D600A85316 /* ViewController.m */; };
+		18D0016B19C806C800A85316 /* DRKAccountListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0016A19C806C800A85316 /* DRKAccountListViewController.swift */; };
+		18D0017019C831B000A85316 /* DRKAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0016F19C831B000A85316 /* DRKAccountTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +49,8 @@
 		18BF842D19C7E42C00933690 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		18BF843319C7E44C00933690 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		18BF843519C7E56700933690 /* DRKAccountStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRKAccountStore.swift; sourceTree = "<group>"; };
-		18D0016A19C806C800A85316 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		18D0016C19C806D600A85316 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18D0016D19C806D600A85316 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18D0016A19C806C800A85316 /* DRKAccountListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRKAccountListViewController.swift; sourceTree = "<group>"; };
+		18D0016F19C831B000A85316 /* DRKAccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRKAccountTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,9 +134,7 @@
 		18BF842319C7E42C00933690 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				18D0016A19C806C800A85316 /* ViewController.swift */,
-				18D0016C19C806D600A85316 /* ViewController.h */,
-				18D0016D19C806D600A85316 /* ViewController.m */,
+				18D0016A19C806C800A85316 /* DRKAccountListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -174,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				18BF843319C7E44C00933690 /* LaunchScreen.xib */,
+				18D0016F19C831B000A85316 /* DRKAccountTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -279,11 +277,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				18BF83F919C7DCDE00933690 /* AppDelegate.swift in Sources */,
+				18D0017019C831B000A85316 /* DRKAccountTableViewCell.swift in Sources */,
 				18BF842F19C7E42C00933690 /* dPasswords.xcdatamodeld in Sources */,
-				18D0016E19C806D600A85316 /* ViewController.m in Sources */,
 				18BF843219C7E42C00933690 /* NSString+MD5.m in Sources */,
 				18BF843119C7E42C00933690 /* NSData+AES.m in Sources */,
-				18D0016B19C806C800A85316 /* ViewController.swift in Sources */,
+				18D0016B19C806C800A85316 /* DRKAccountListViewController.swift in Sources */,
 				18BF843019C7E42C00933690 /* DRKAccount.swift in Sources */,
 				18BF843619C7E56700933690 /* DRKAccountStore.swift in Sources */,
 			);
