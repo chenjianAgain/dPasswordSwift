@@ -59,6 +59,11 @@
                                         <constraint firstItem="9js-T6-WwV" firstAttribute="trailing" secondItem="l1a-zj-kWR" secondAttribute="trailingMargin" id="yRV-1N-Esm"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="accountNameLabel" destination="9js-T6-WwV" id="V8k-UA-hoX"/>
+                                    <outlet property="passwordLabel" destination="JKa-DQ-zX6" id="uGH-JF-1fL"/>
+                                    <outlet property="usernameLabel" destination="JyO-j7-CWf" id="fip-sR-9aQ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
